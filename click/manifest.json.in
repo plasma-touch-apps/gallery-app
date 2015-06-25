@@ -1,0 +1,25 @@
+{
+    "description": "Gallery application for your photo collection",
+    "framework": "ubuntu-sdk-14.10",
+    "architecture": "@CLICK_ARCH@",
+    "hooks": {
+        "gallery": {
+            "apparmor": "gallery.apparmor",
+            "content-hub": "gallery-content.json",
+            "desktop": "@CMAKE_INSTALL_DATADIR@/applications/@DESKTOP_FILE@",
+            "urls": "share/url-dispatcher/urls/gallery-app.url-dispatcher"
+        }
+    },
+    "icon": "share/icons/gallery-app.svg",
+    "maintainer": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+    "name": "@APP_PACKAGE_NAME@",
+    "title": "Gallery",
+    "version": "2.9.1.@BZR_REVNO@",
+    "x-source": {
+        "vcs-bzr": "@BZR_SOURCE@",
+        "vcs-bzr-revno": "@BZR_REVNO@"
+    },
+    "x-test": {
+        "autopilot": "@AUTOPILOT_DIR@"
+    }
+}

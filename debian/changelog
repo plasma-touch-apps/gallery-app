@@ -1,0 +1,2307 @@
+gallery-app (0.0.67+15.04.20150422-0ubuntu1) vivid; urgency=medium
+
+  [ Arthur Mello ]
+  * Fix AP tests
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Wed, 22 Apr 2015 13:57:21 +0000
+
+gallery-app (0.0.67+15.04.20150409-0ubuntu1) vivid; urgency=medium
+
+  [ Arthur Mello ]
+  * Change thumbnail's image provider header for videos on
+    SingleMediaViewer (LP: #1430357)
+  * Convert video exposure time from UTC to local time when the event
+    header for the video is created. The video exposure time will still
+    be stored using UTC in the DB (LP: #1433739)
+
+  [ CI Train Bot ]
+  * New rebuild forced.
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Thu, 09 Apr 2015 17:57:22 +0000
+
+gallery-app (0.0.67+15.04.20150330~rtm-0ubuntu1) 14.09; urgency=medium
+
+  [ Arthur Mello ]
+  * Add the "at" param to the calls of thumbnailer image provider to
+    make sure the images will be updated after the user edit them
+
+  [ CI Train Bot ]
+  * New rebuild forced.
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Mon, 30 Mar 2015 18:39:09 +0000
+
+gallery-app (0.0.67+15.04.20150318-0ubuntu1) vivid; urgency=medium
+
+  [ Arthur Mello ]
+  * Do not update PhotoViewer Image sourceSize everytime the app is
+    resized on devices. That way we will not flicker the image everytime
+    we toggle fullscreen Animate Image resize (LP: #1425563)
+  * Replace the built-in photo editor with the one from ubuntu-ui-extras
+
+  [ CI Train Bot ]
+  * New rebuild forced.
+
+  [ Olivier Tilloy ]
+  * Translation template update.
+
+  [ Ugo Riboni ]
+  * Replace the built-in photo editor with the one from ubuntu-ui-extras
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Wed, 18 Mar 2015 16:37:33 +0000
+
+gallery-app (0.0.67+15.04.20150219-0ubuntu1) vivid; urgency=medium
+
+  [ Olivier Tilloy ]
+  * Remove a useless runtime dependency. The dependency on
+    Ubuntu.Components.Extras was removed at revision 1008 (on 2014-07-
+    03) but debian/control wasn’t updated accordingly back then.
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Thu, 19 Feb 2015 09:10:33 +0000
+
+gallery-app (0.0.67+15.04.20150217-0ubuntu1) vivid; urgency=medium
+
+  [ Olivier Tilloy ]
+  * Fix failing autopilot tests that were broken by the changes
+    introduced at revision 1143 (fix for bug #1416043). (LP: #1416043)
+
+ -- CI Train Bot <ci-train-bot@canonical.com>  Tue, 17 Feb 2015 12:29:27 +0000
+
+gallery-app (0.0.67+15.04.20150212.1-0ubuntu1) vivid; urgency=medium
+
+  [ Bill Filler ]
+  * update depends on ui-extras new version
+
+  [ Arthur Mello ]
+  * Change the toggle select icons when in the slideshow view
+
+  [ Richard Huddie ]
+  * Fixes for dashboard failures, bug lp:1419849 (LP: #1419849)
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 12 Feb 2015 19:38:26 +0000
+
+gallery-app (0.0.67+15.04.20150210.1-0ubuntu1) vivid; urgency=medium
+
+  [ Arthur Mello ]
+  * Add check box feedback when in selection mode Make it possible to
+    see a picture fullscreen even in selectionMode (LP: #1416043)
+
+  [ Florian Boucault ]
+  * Swiping quickly through slideshow no longer causes photos to zoom.
+    Workaround for QTBUG-39332. (LP: #1400141)
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 10 Feb 2015 19:54:08 +0000
+
+gallery-app (0.0.67+15.04.20150202-0ubuntu1) vivid; urgency=medium
+
+  [ Arthur Mello ]
+  * Makes gallery-app to call MediaPlayer to play videos instead of
+    playing by itself (LP: #1324622)
+  * Make fullscreen mode dynamic when on device (LP: #1415140)
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 02 Feb 2015 23:41:37 +0000
+
+gallery-app (0.0.67+15.04.20150126.2~rtm-0ubuntu1) 14.09; urgency=low
+
+  [ Arthur Mello ]
+  * Do not create objects if the file was removed from the time the
+    create was requested and when it was started
+
+  [ Florian Boucault ]
+  * Do not create objects if the file was removed from the time the
+    create was requested and when it was started
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 26 Jan 2015 18:41:06 +0000
+
+gallery-app (0.0.67+15.04.20150125.1-0ubuntu1) vivid; urgency=low
+
+  [ Arthur Mello ]
+  * Move MediaObjectFactory to another thread to make sure when we are
+    loading multiple files we keep the interface responsible (LP:
+    #1413952)
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Sun, 25 Jan 2015 20:46:16 +0000
+
+gallery-app (0.0.67+15.04.20150121.1-0ubuntu1) vivid; urgency=low
+
+  [ Bill Filler ]
+  * merge lp:~bfiller/gallery-app/sd-card-rules
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+  [ Ugo Riboni ]
+  * Directly downscale the images for the viewer instead of asking the
+    thumbnailer to do it (which it would do incorrectly) (LP: #1412442)
+  * Make sure the first time a photo is added to the database we read
+    the actual size save it to the database (LP: #1404170)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 21 Jan 2015 15:39:55 +0000
+
+gallery-app (0.0.67+15.04.20150108.1-0ubuntu1) vivid; urgency=low
+
+  [ Bill Filler ]
+  * update framework version
+
+  [ Arthur Mello ]
+  * Add some checks to make sure the file has good metadata before
+    changing it
+  * Make gallery display files that are not supported by QImageWriter or
+    that do not have metadata Disable the editing options for files that
+    are not supported by QImageWriter (LP: #1403205)
+
+  [ Florian Boucault ]
+  * Support videos from SD card by adding /media/phablet folder to the
+    video directories.
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 08 Jan 2015 20:32:57 +0000
+
+gallery-app (0.0.67+15.04.20141211-0ubuntu1) vivid; urgency=low
+
+  [ Arthur Mello ]
+  * Delay the adding of a new album until the editor is finished
+
+  [ Florian Boucault ]
+  * Append directory under /media/phablet to m_mediaDirectories, so
+    photos captured onto SD card can be listed.
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 11 Dec 2014 16:38:25 +0000
+
+gallery-app (0.0.67+15.04.20141209-0ubuntu1) vivid; urgency=low
+
+  [ Arthur Mello ]
+  * Load the AlbumEditor without the animation to improve the load time
+    (LP: #1398419)
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 09 Dec 2014 17:45:59 +0000
+
+gallery-app (0.0.67+15.04.20141112-0ubuntu1) vivid; urgency=low
+
+  [ Arthur Mello ]
+  * Delay the opening photo process until all media files are loaded
+    when called by url handler (LP: #1389514)
+  * Switch to events view after a media imported (LP: #1382109)
+  * Set the TimeDigitized Exif field for the import date on imported
+    files (LP: #1381583)
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 12 Nov 2014 22:27:36 +0000
+
+gallery-app (0.0.67+14.10.20141017-0ubuntu1) utopic; urgency=low
+
+  [ Arthur Mello ]
+  * Show header by default on an empty album (LP: #1378367)
+
+  [ Ugo Riboni ]
+  * Delete the new empty album if the album editor is closed by clicking
+    outside of the album cover (LP: #1234128)
+  * Adjust the popover position for the cover pattern editor. (LP:
+    #1374016)
+
+  [ Sebastien Bacher ]
+  * Use a Binding to set the gettext domain, fixes the import mode
+    translations (LP: #1378384)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 17 Oct 2014 07:41:18 +0000
+
+gallery-app (0.0.67+14.10.20141010-0ubuntu1) 14.09; urgency=low
+
+  [ Bill Filler ]
+  * Scale the album title proportionally to the album itself, so it
+    works on all devices. (LP: #1377767)
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+  [ Florian Boucault ]
+  * Respect EXIF orientation when showing a photo by starting to use the
+    GalleryStandardImageProvider again. (LP: #1377298)
+
+  [ Jussi Pakkanen ]
+  * Fix thumbnailer import. (LP: #1368492)
+
+  [ Ugo Riboni ]
+  * Scale the album title proportionally to the album itself, so it
+    works on all devices. (LP: #1377767)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 10 Oct 2014 01:30:08 +0000
+
+gallery-app (0.0.67+14.10.20141008-0ubuntu1) 14.09; urgency=low
+
+  [ Bill Filler ]
+  * use header in splash screen (LP: #1378379)
+
+  [ Arthur Mello ]
+  * Fix the gallery-app crash when removing files (LP: #1334807)
+  * Fix header label not being updated correctly (LP: #1377765)
+
+  [ Ugo Riboni ]
+  * Do not upscale the thumbnail when viewing the unzoomed picture but
+    load a downscaled version of the picture instead (LP: #1376767)
+
+  [ Niklas Wenzel ]
+  * Correct the title for delete dialog based on video or photo.
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 08 Oct 2014 02:34:53 +0000
+
+gallery-app (0.0.67+14.10.20141002-0ubuntu1) 14.09; urgency=low
+
+  [ Arthur Mello ]
+  * Hide the video thumbnail when playing the video on gallery (LP:
+    #1371021)
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+  [ Pawel Stolowski ]
+  * Added X-Ubuntu-Default-Department-ID key to the desktop file. This
+    is required by click scope to support departments for preinstalled
+    applications.
+
+  [ Sebastien Bacher ]
+  * Have the affirmative action on the right (LP: #1372832)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 02 Oct 2014 00:19:11 +0000
+
+gallery-app (0.0.67+14.10.20140925.3~rtm-0ubuntu1) 14.09; urgency=low
+
+  [ Bill Filler ]
+  * using "Share" instead of "Share photo" in action as it may be a
+    video
+
+  [ Arthur Mello ]
+  * Add support for the photo and video url schema (LP: #1369652)
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 25 Sep 2014 20:23:30 +0000
+
+gallery-app (0.0.67+14.10.20140925.1~rtm-0ubuntu1) 14.09; urgency=low
+
+  [ Víctor R. Ruiz ]
+  * Remove X-Ubuntu-Gettext-Domain to activate .desktop file
+    localization.
+
+  [ Ugo Riboni ]
+  * Allow sharing from the events or photo view, while selecting. (LP:
+    #1366820)
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 25 Sep 2014 13:05:26 +0000
+
+gallery-app (0.0.67+14.10.20140922-0ubuntu1) utopic; urgency=low
+
+  [ Arthur Mello ]
+  * Move the Loading Screen to inside the tabs (LP: #1325001)
+  * Fix the editing of the album name by setting the hint to turn off
+    predictive text
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 22 Sep 2014 13:36:36 +0000
+
+gallery-app (0.0.67+14.10.20140917-0ubuntu1) utopic; urgency=low
+
+  [ Ugo Riboni ]
+  * Translate the .desktop file inline (LP: #1325626)
+
+  [ Albert Astals ]
+  * Update .pot
+
+  [ Benjamin Zeller ]
+  * Make sure gallery-app cmake project works out of the box in the SDK:
+    Enable click mode by default. Disable click mode in debian rules
+    file. Add variable UBUNTU_MANIFEST_PATH variable so QtC knows where
+    to look. for the manifest file Rename gallery-apparmor.json =>
+    gallery.apparmor (editor support). Automatically substitute the
+    click architecture in the manifest file .
+
+  [ Víctor R. Ruiz ]
+  * Mark photo deletion strings for translation (LP: #1365032)
+
+  [ David Planella ]
+  * Mark photo deletion strings for translation (LP: #1365032)
+
+  [ CI bot ]
+  * Resync trunk
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 17 Sep 2014 17:38:32 +0000
+
+gallery-app (0.0.67+14.10.20140906-0ubuntu1) utopic; urgency=low
+
+  [ Bill Filler ]
+  * Mark strings for translation
+
+  [ Arthur Mello ]
+  * Make gallery-app uses the new header (LP: #1289160)
+
+  [ Ugo Riboni ]
+  * Move the new album strings to QML to make them translatable. Remove
+    some dead code. (LP: #1364310)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Sat, 06 Sep 2014 21:09:12 +0000
+
+gallery-app (0.0.67+14.10.20140827-0ubuntu1) utopic; urgency=low
+
+  [ Ugo Riboni ]
+  * Filter the picker lists according to the content type that is being
+    requested by the content hub. (LP: #1349493)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 27 Aug 2014 20:29:06 +0000
+
+gallery-app (0.0.67+14.10.20140821-0ubuntu1) utopic; urgency=low
+
+  [ Arthur Mello ]
+  * Search for new directories when there is any change on the watched
+    directories (LP: #1357155)
+
+  [ Leo Arias ]
+  * Update the content picker version on autopilot tests. (LP: #1358968)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 21 Aug 2014 13:42:05 +0000
+
+gallery-app (0.0.67+14.10.20140814-0ubuntu1) utopic; urgency=low
+
+  [ Bill Filler ]
+  * revert change to async loader as it's causing lp:1356841 (LP:
+    #1356841)
+
+  [ CI bot ]
+  * Resync trunk
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 14 Aug 2014 22:03:13 +0000
+
+gallery-app (0.0.67+14.10.20140812-0ubuntu1) utopic; urgency=low
+
+  [ CI bot ]
+  * Resync trunk
+
+  [ Florian Boucault ]
+  * Remove retrieval of maximum texture size. It is not useful and
+    causing crashes.
+
+  [ Ugo Riboni ]
+  * Load the main screen asynchronously to prevent blocking (LP:
+    #1349124)
+
+  [ Arthur Mello ]
+  * Remove unnecessary dependencies of video unittes
+  * Fix definition on GETTEXT_PACKAGE on CMakeLists to make translations
+    works for click pkgs (LP: #1349958)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 12 Aug 2014 20:06:54 +0000
+
+gallery-app (0.0.67+14.10.20140726-0ubuntu1) utopic; urgency=low
+
+  [ Bill Filler ]
+  * bump framework and security version of the click package
+
+  [ CI bot ]
+  * Resync trunk
+
+  [ Richard Huddie ]
+  * A new Page view to represent photos page in picker view with method
+    to select the named photo. Fix issue with existing failing picker
+    mode tests where launch parameters were appended incorrectly. (LP:
+    #1336414)
+
+  [ Colin Watson ]
+  * bump framework and security version of the click package
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Sat, 26 Jul 2014 03:38:08 +0000
+
+gallery-app (0.0.67+14.10.20140718-0ubuntu1) utopic; urgency=low
+
+  [ Michael Sheldon ]
+  * Hide the media viewer toolbar when displaying the share picker.
+  * Finalize content-hub transfers so that temporary files in ~/.cache
+    can be cleaned up by content-hub.
+
+  [ Colin Watson ]
+  * Link exiv2 statically in click mode. (LP: #1342840)
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 18 Jul 2014 14:41:06 +0000
+
+gallery-app (0.0.67+14.10.20140703-0ubuntu1) utopic; urgency=low
+
+  [ Bill Filler ]
+  * Switch to using the content-hub for sharing. When selecting the
+    share action, the ContentPeerPicker will be shown with a list of
+    apps that provide sharing.
+
+  [ Michael Sheldon ]
+  * Add videos as supported content-hub destination and source type.
+
+  [ Ken VanDine ]
+  * Switch to using the content-hub for sharing. When selecting the
+    share action, the ContentPeerPicker will be shown with a list of
+    apps that provide sharing.
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 03 Jul 2014 16:26:56 +0000
+
+gallery-app (0.0.67+14.10.20140701-0ubuntu1) utopic; urgency=low
+
+  [ Michał Sawicz ]
+  * New icon from suru theme.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 01 Jul 2014 07:21:22 +0000
+
+gallery-app (0.0.67+14.10.20140625.1-0ubuntu1) utopic; urgency=low
+
+  [ Arthur Mello ]
+  * Ensure the window is made fullscreen before it is shown, to work
+    around an issue with calculating window coordinates. Also ensure
+    that the window has been shown before querying for
+    MAX_GL_TEXTURE_SIZE. (LP: #1332632)
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 25 Jun 2014 19:08:54 +0000
+
+gallery-app (0.0.67+14.10.20140618.1-0ubuntu1) utopic; urgency=low
+
+  [ Arthur Mello ]
+  * Add option to remove from album or delete from gallery when viewing
+    photos from an album (LP: #1322095)
+  * Display all videos on Videos directory on device (LP: #1324617)
+  * Fix the way we hide the header on AlbumViewer (LP: #1331382)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 18 Jun 2014 19:02:14 +0000
+
+gallery-app (0.0.67+14.10.20140610-0ubuntu1) utopic; urgency=low
+
+  [ Arthur Mello ]
+  * Disable "Add" button if no media is selected on selection screen
+  * Add support to load qttestability using env var QT_LOAD_TESTABILITY
+    (LP: #1321783)
+  * Remove album opening/closing transition to reduce load timer on
+    devices. (LP: #1090122)
+
+  [ Michael Sheldon ]
+  * Wait until the media monitor has completed its consistency checks
+    before connecting to the content hub.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 10 Jun 2014 20:01:12 +0000
+
+gallery-app (0.0.67+14.10.20140528-0ubuntu1) utopic; urgency=low
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+  [ Olivier Tilloy ]
+  * No change rebuild to pick up the latest translation updates.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 28 May 2014 10:06:31 +0000
+
+gallery-app (0.0.67+14.10.20140522.3-0ubuntu1) utopic; urgency=low
+
+  [ Arthur Mello ]
+  * Fix autopilot issue caused by the change to use Page Stack
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 22 May 2014 17:13:28 +0000
+
+gallery-app (0.0.67+14.10.20140522-0ubuntu1) utopic; urgency=low
+
+  [ Arthur Mello ]
+  * Change to use PageStack to fix issue with toolbar while activating
+    and deactivating Pages. (LP: #1319927)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 22 May 2014 07:43:23 +0000
+
+gallery-app (0.0.67+14.10.20140515.1-0ubuntu1) utopic; urgency=low
+
+  [ CI bot ]
+  * Resync trunk
+
+  [ Sergio Schvezov ]
+  * Correct click manifest for python3.
+
+  [ Michael Sheldon ]
+  * Add a content-hub import handler, allowing other applications to add
+    images to the gallery.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 15 May 2014 20:56:41 +0000
+
+gallery-app (0.0.67+14.10.20140509-0ubuntu1) utopic; urgency=low
+
+  [ Arthur Mello ]
+  * Update po and pot files
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 09 May 2014 20:23:47 +0000
+
+gallery-app (0.0.67+14.10.20140505-0ubuntu2) utopic; urgency=medium
+
+  * Renaming dep package qtdeclarative5-qtmultimedia-plugin to
+    qml-module-qtmultimedia
+
+ -- Ricardo Salveti de Araujo <ricardo.salveti@canonical.com>  Fri, 09 May 2014 13:06:48 -0300
+
+gallery-app (0.0.67+14.10.20140505-0ubuntu1) utopic; urgency=low
+
+  [ Chris Gagnon ]
+  * fix tests on desktop, fix flaky test, pep8 fixes, refactor test to
+    make failures easier to diagnose. [barry] py3 port (LP: #1304950)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 05 May 2014 14:43:25 +0000
+
+gallery-app (0.0.67+14.10.20140501-0ubuntu1) utopic; urgency=low
+
+  [ Bill Filler ]
+  * disable sharing option on desktop (LP: #1311123)
+
+  [ Arthur Mello ]
+  * Make sure we do not monitor hidden directories (LP: #907870)
+  * Make gallery does not create a new album if process is canceled (LP:
+    #1300337)
+  * Make sure gallery deletes all album content when it is requested.
+    (LP: #1300344)
+  * Change the page title so it does not show the app name. (LP:
+    #1312123)
+  * Fallback for date that file was created if no information about
+    encoded date was found on video metadata (LP: #1314632)
+
+  [ Richard Huddie ]
+  * A new emulator method for selecting a specific photo from the picker
+    view. A new test is also added to use this method and then click on
+    the Pick button.
+
+  [ Ugo Riboni ]
+  * Show progress indicator while loading thumbnails in photo view (LP:
+    #1295124)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 01 May 2014 14:38:33 +0000
+
+gallery-app (0.0.67+14.04.20140408.1-0ubuntu2) trusty; urgency=medium
+
+  * debian/control: alternatively depend on the OpenGLES version of
+    qtdeclarative5-qtmultimedia-plugin and qtdeclarative5-ubuntu-ui-toolkit-plugin
+
+ -- Ricardo Salveti de Araujo <ricardo.salveti@canonical.com>  Mon, 14 Apr 2014 17:18:47 -0300
+
+gallery-app (0.0.67+14.04.20140408.1-0ubuntu1) trusty; urgency=low
+
+  [ Bill Filler ]
+  * skip broken test until root cause can be found
+
+  [ Arthur Mello ]
+  * Make sure that album cover will be not behind header at album edit
+    screen (LP: #1294291)
+  * Add unittest to check if only videos on the correct path are beeing
+    added to gallery on device
+  * Add an overlay play icon over Video preview on media navigation (LP:
+    #1294282)
+  * Apply a similar workaround to the one suggested by Zsombor to work
+    around bug #1296832 to temporarily replace MouseAreas within
+    PinchAreas (LP: #1296832, #1288695)
+
+  [ Ugo Riboni ]
+  * Fix album navigation, allowing to page all the way to the last page,
+    and to close the album by paging to the cover. (LP: #1287355)
+  * Apply a similar workaround to the one suggested by Zsombor to work
+    around bug #1296832 to temporarily replace MouseAreas within
+    PinchAreas (LP: #1296832, #1288695)
+  * fix autopilot test
+
+  [ Leo Arias ]
+  * Properly override the toolkit toolbar autopilot helper.
+  * On the autopilot helpers to click a toolbar button, check that the
+    toolbar is opened first. (LP: #1302706)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 08 Apr 2014 18:51:30 +0000
+
+gallery-app (0.0.67+14.04.20140328-0ubuntu1) trusty; urgency=low
+
+  [ Bill Filler ]
+  * change check for desktopMode to use platform name rather than env
+    var
+
+  [ Arthur Mello ]
+  * Make sure that gallery will not be able to remove media files from
+    disk if it finds any sort of inconsistency (LP: #1295344)
+  * Make sure that videos placed out the video directory will be not
+    displayed on devices (LP: #1296634)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 28 Mar 2014 15:34:43 +0000
+
+gallery-app (0.0.67+14.04.20140325-0ubuntu1) trusty; urgency=low
+
+  [ CI bot ]
+  * Resync trunk
+
+  [ Arthur Mello ]
+  * Make gallery-app only search for videos on the path where camera-app
+    will save recording files on devices. (LP: #1296634)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 25 Mar 2014 22:49:08 +0000
+
+gallery-app (0.0.67+14.04.20140321-0ubuntu1) trusty; urgency=low
+
+  [ Ken VanDine ]
+  * Updated to build against changes in content-hub
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 21 Mar 2014 00:32:38 +0000
+
+gallery-app (0.0.67+14.04.20140319-0ubuntu1) trusty; urgency=low
+
+  [ Barry Warsaw ]
+  * Use pkg_resources API to retrieve sample_dir.
+
+  [ Ugo Riboni ]
+  * multiple gallery-app bug fixes Bug #907870: [desktop] Gallery does
+    not display photos in sub folders, Bug #1221968: use libthumbnailer
+    for gallery thumbnails, Bug #1268748: videos are not displayed when
+    running on desktop, Bug #1271327: disable switching between camera
+    and gallery on desktop, Bug #1287272: Black flash at the end of the
+    zoom animation" (LP: #1221968, #1287272, #1268748, #907870,
+    #1271327)
+
+  [ Arthur Mello ]
+  * multiple gallery-app bug fixes Bug #907870: [desktop] Gallery does
+    not display photos in sub folders, Bug #1221968: use libthumbnailer
+    for gallery thumbnails, Bug #1268748: videos are not displayed when
+    running on desktop, Bug #1271327: disable switching between camera
+    and gallery on desktop, Bug #1287272: Black flash at the end of the
+    zoom animation" (LP: #1221968, #1287272, #1268748, #907870,
+    #1271327)
+
+  [ Bill Filler ]
+  * updated framework version
+  * multiple gallery-app bug fixes Bug #907870: [desktop] Gallery does
+    not display photos in sub folders, Bug #1221968: use libthumbnailer
+    for gallery thumbnails, Bug #1268748: videos are not displayed when
+    running on desktop, Bug #1271327: disable switching between camera
+    and gallery on desktop, Bug #1287272: Black flash at the end of the
+    zoom animation" (LP: #1221968, #1287272, #1268748, #907870,
+    #1271327)
+  * fix blurry thumbnails when navigating photos
+
+  [ CI bot ]
+  * Resync trunk
+
+  [ Sergio Schvezov ]
+  * Fixing click launching
+
+  [ Dimitri John Ledkov ]
+  * Use pkg_resources API to retrieve sample_dir.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 19 Mar 2014 20:20:32 +0000
+
+gallery-app (0.0.67+14.04.20140307-0ubuntu1) trusty; urgency=low
+
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 07 Mar 2014 08:41:09 +0000
+
+gallery-app (0.0.67+14.04.20140306-0ubuntu1) trusty; urgency=low
+
+  [ Bill Filler ]
+  * Click support
+
+  [ Sergio Schvezov ]
+  * Click support
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 06 Mar 2014 16:39:13 +0000
+
+gallery-app (0.0.67+14.04.20140214-0ubuntu1) trusty; urgency=low
+
+  [ Arthur Mello ]
+  * Add support to toggle fullscreen using F11 and Escape keys on
+    Desktop platform. (LP: #1272813)
+
+  [ Ugo Riboni ]
+  * fix navigating of photos requiring 2 swipes (LP: #1268744)
+
+  [ Ubuntu daily release ]
+  * New rebuild forced
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 14 Feb 2014 15:03:59 +0000
+
+gallery-app (0.0.67+14.04.20140131-0ubuntu1) trusty; urgency=low
+
+  [ Bill Filler ]
+  * don't run in fullscreen if DESKTOP_MODE=1.
+
+  [ CI bot ]
+  * release trunk into CI Train
+
+  [ Ugo Riboni ]
+  * Save the state of the view when restarting the app.
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 31 Jan 2014 11:37:20 +0000
+
+gallery-app (0.0.67+14.04.20140108.2-0ubuntu1) trusty; urgency=low
+
+  [ Adnane Belmadiaf ]
+  * Fixed the loading screen. (LP: #1262004)
+
+  [ Ugo Riboni ]
+  * Explicitly depend on pkg-config instead of having it pulled in by
+    some other package.
+
+  [ daker ]
+  * Fixed the loading screen. (LP: #1262004)
+
+  [ Olivier Tilloy ]
+  * Explicitly depend on pkg-config instead of having it pulled in by
+    some other package.
+  * Ensure the fields have active focus before interacting with them.
+  * Revert a few changes that are now rendered useless by the updated
+    emulator that ensures the toolbar is open before actually clicking a
+    button.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 902
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 08 Jan 2014 17:08:20 +0000
+
+gallery-app (0.0.67+14.04.20131217-0ubuntu1) trusty; urgency=low
+
+  [ Omer Akram ]
+  * Changes the color of the delete dialog's cancel button. (LP:
+    #1207399)
+
+  [ Dmitrijs Ledkovs ]
+  * Remove gstreamer0.10-ffmpeg dependency. (LP: #1254033). (LP:
+    #1254033)
+
+  [ Olivier Tilloy ]
+  * Use QT5_WRAP_CPP instead of QT_WRAP_CPP. Fixes building from source
+    on an up-to-date trusty setup. (LP: #1261417)
+  * Fix a flaky test by always waiting for the confirmation dialogue to
+    be fully visible before interacting with it.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 892
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 17 Dec 2013 18:52:44 +0000
+
+gallery-app (0.0.67+14.04.20131106-0ubuntu1) trusty; urgency=low
+
+  [ Łukasz 'sil2100' Zemczak ]
+  * Updating tests in preparation of autopilot 1.4 release.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 882
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 06 Nov 2013 13:29:43 +0000
+
+gallery-app (0.0.67+14.04.20131105-0ubuntu1) trusty; urgency=low
+
+  [ Guenter Schwann ]
+  * Put share panel in a Loader. (LP: #1221266)
+
+  [ Łukasz 'sil2100' Zemczak ]
+  * Ensure the toolbar is hidden before interacting with the
+    application. This catters for the new default toolbar behaviour,
+    which is shown at startup and automatically hides after 5 seconds
+    (introduced with revision 805 of the UITK).
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 880
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 05 Nov 2013 15:12:08 +0000
+
+gallery-app (0.0.67+13.10.20131011.1-0ubuntu1) saucy; urgency=low
+
+  [ Bill Filler ]
+  * merged lp:~schwann/gallery-app/gallery-pick-return
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 872
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 11 Oct 2013 11:17:59 +0000
+
+gallery-app (0.0.67+13.10.20131007.2-0ubuntu1) saucy; urgency=low
+
+  [ Sergio Schvezov ]
+  * Click building support and fixing tests to work for click and
+    minimizing code duplication.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 867
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 07 Oct 2013 21:30:56 +0000
+
+gallery-app (0.0.67+13.10.20131007.1-0ubuntu1) saucy; urgency=low
+
+  [ Ken VanDine ]
+  * use pkgconfig provided in content-hub >= 0.0+13.10.20130930.1 .
+
+  [ Guenter Schwann ]
+  * Fix getting the correct selection type fixes LP: #1229801 Do not
+    close gallery directly after charging, but wait for the transfer to
+    be aborted or collected. (LP: #1229801)
+
+  [ Ugo Riboni ]
+  * If facebook is configured, share to it immediately. If not give the
+    option to configure it. (LP: #1229430)
+
+  [ Omer Akram ]
+  * use pointing device creation code from the UIToolkit emulators.
+
+  [ Matthew Fischer ]
+  * Fix the path for the icon.
+  * Remove the icon from the package. (LP: #1235070)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 865
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 07 Oct 2013 05:18:49 +0000
+
+gallery-app (0.0.67+13.10.20131001.3-0ubuntu1) saucy; urgency=low
+
+  [ Ugo Riboni ]
+  * Use the URL dispatcher to launch the camera app. (LP: #1233236)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 855
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 01 Oct 2013 19:49:44 +0000
+
+gallery-app (0.0.67+13.10.20130924.1-0ubuntu2) saucy; urgency=low
+
+  * No change rebuild with the current content-hub (lp: #1231368)
+
+ -- Sebastien Bacher <seb128@ubuntu.com>  Tue, 01 Oct 2013 11:53:32 +0200
+
+gallery-app (0.0.67+13.10.20130924.1-0ubuntu1) saucy; urgency=low
+
+  [ Guenter Schwann ]
+  * When adding a new album, go to album edit directly Fixes LP:
+    #1163414. (LP: #1163414)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 849
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 24 Sep 2013 07:05:12 +0000
+
+gallery-app (0.0.67+13.10.20130920-0ubuntu1) saucy; urgency=low
+
+  [ Ted Gould ]
+  * Adding single instance marker to the desktop file.
+
+  [ Guenter Schwann ]
+  * Get and use single/multiselection in pick mode from transfer object.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 846
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 20 Sep 2013 11:24:47 +0000
+
+gallery-app (0.0.67+13.10.20130919.3-0ubuntu1) saucy; urgency=low
+
+  [ Guenter Schwann ]
+  * Enable delete in album view (close view without animation) fixes LP:
+    #1163437. (LP: #1163437)
+  * Fix bug closing the album view LP: #1207395. (LP: #1207395)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 842
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 19 Sep 2013 15:52:26 +0000
+
+gallery-app (0.0.67+13.10.20130918.1-0ubuntu1) saucy; urgency=low
+
+  [ Gerry Boland ]
+  * Application module name changed, update the
+    UbuntuApplicationWrapper.
+
+  [ Ugo Riboni ]
+  * Use the Actions API instead of using the HUD directly. (LP:
+    #1221344, #1220279)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 839
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 18 Sep 2013 08:02:09 +0000
+
+gallery-app (0.0.67+13.10.20130905-0ubuntu1) saucy; urgency=low
+
+  [ Chris Wayne ]
+  * In EventCard.qml, there's no reason to explictly set the font or the
+    color for label, as that should just be inherited by the theme. (LP:
+    #1220352)
+
+  [ Jussi Pakkanen ]
+  * Store original path as an image attribute.
+
+  [ Guenter Schwann ]
+  * Return urls not filenames to content hub.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 835
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 05 Sep 2013 08:02:48 +0000
+
+gallery-app (0.0.67+13.10.20130903-0ubuntu1) saucy; urgency=low
+
+  [ Guenter Schwann ]
+  * Fix test for the toolbar using the old active property. (LP:
+    #1218953)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 831
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 03 Sep 2013 15:59:09 +0000
+
+gallery-app (0.0.67+13.10.20130829.1-0ubuntu1) saucy; urgency=low
+
+  [ Guenter Schwann ]
+  * Use content hub for content picking.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 827
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 29 Aug 2013 03:40:05 +0000
+
+gallery-app (0.0.67+13.10.20130827.1-0ubuntu1) saucy; urgency=low
+
+  [ Guenter Schwann ]
+  * Pick mode always shows photos and videos and is multiselection.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 825
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 27 Aug 2013 11:20:53 +0000
+
+gallery-app (0.0.67+13.10.20130827-0ubuntu1) saucy; urgency=low
+
+  [ Ugo Riboni ]
+  * Use the share component from ubuntu-ui-extras instead of launching
+    the share app.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 823
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 27 Aug 2013 02:44:04 +0000
+
+gallery-app (0.0.67+13.10.20130821-0ubuntu1) saucy; urgency=low
+
+  [ Guenter Schwann ]
+  * * cleanups for the autopilot tests * test if long press on media
+    switches to select mode.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 819
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 21 Aug 2013 08:08:40 +0000
+
+gallery-app (0.0.67+13.10.20130820.2-0ubuntu1) saucy; urgency=low
+
+  [ Guenter Schwann ]
+  * Additional test when opening the edit popover.
+  * Clean up cmake files.
+  * * read video metadata from video file * rotate video thumbnail for
+    portrait videos.
+  * * be more strict about compiler warnings and errors * delete the
+    MediaViewer after opening it from an album * add script to compile
+    and run gallery on the device.
+
+  [ Robert Bruce Park ]
+  * Put the dependency in the right place, not here.
+
+  [ Olivier Tilloy ]
+  * Fix FTBFS. (LP: #1213776)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 817
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 20 Aug 2013 10:42:06 +0000
+
+gallery-app (0.0.67+13.10.20130813.2-0ubuntu1) saucy; urgency=low
+
+  [ Guenter Schwann ]
+  * Fix crash on exit. (LP: #1211334)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 809
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 13 Aug 2013 14:12:59 +0000
+
+gallery-app (0.0.67+13.10.20130813.1-0ubuntu1) saucy; urgency=low
+
+  [ Omer Akram ]
+  * makes the photo zoom autopilot tests more reliable. (LP: #1211425)
+
+  [ Guenter Schwann ]
+  * Long press in event view enters selection mode. (LP: #1086416)
+  * Use UITK emulator functions for the toolbar buttons.
+  * Create vido thumbnails from the videos.
+  * Use UITK functions to switch tabs in autopilot tests.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 807
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 13 Aug 2013 06:19:24 +0000
+
+gallery-app (0.0.67+13.10.20130809.2-0ubuntu1) saucy; urgency=low
+
+  [ Guenter Schwann ]
+  * Handle file names correctly to not accidentially delete photos.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 800
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 09 Aug 2013 16:17:46 +0000
+
+gallery-app (0.0.67+13.10.20130809.1-0ubuntu1) saucy; urgency=low
+
+  [ Guenter Schwann ]
+  * Start to use the UITK emulators.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 798
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 09 Aug 2013 12:31:34 +0000
+
+gallery-app (0.0.67+13.10.20130808.2-0ubuntu1) saucy; urgency=low
+
+  * New rebuild forced
+  * Automatic snapshot from revision 796
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 08 Aug 2013 13:18:44 +0000
+
+gallery-app (0.0.67+13.10.20130808.1-0ubuntu1) saucy; urgency=low
+
+  [ Guenter Schwann ]
+  * Close the toolbar when an editing operation was selected.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 795
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 08 Aug 2013 06:28:40 +0000
+
+gallery-app (0.0.67+13.10.20130802-0ubuntu1) saucy; urgency=low
+
+  [ Guenter Schwann ]
+  * Update autopilot test to newest SDK. (LP: #1207647)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 792
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 02 Aug 2013 09:09:47 +0000
+
+gallery-app (0.0.67+13.10.20130801-0ubuntu1) saucy; urgency=low
+
+  [ David Henningsson ]
+  * qtubuntu-media dependency should be part of the touch seeds instead.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 790
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 01 Aug 2013 05:03:01 +0000
+
+gallery-app (0.0.67+13.10.20130729-0ubuntu1) saucy; urgency=low
+
+  [ Guenter Schwann ]
+  * Run edit operations in a background task. (LP: #1011710)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 788
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 29 Jul 2013 08:17:31 +0000
+
+gallery-app (0.0.67+13.10.20130725-0ubuntu1) saucy; urgency=low
+
+  [ Kaleo ]
+  * Make sure the photo viewer height is the size of the window by
+    overriding the default height set by Page. (LP: #1204327)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 784
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 25 Jul 2013 06:41:10 +0000
+
+gallery-app (0.0.67+13.10.20130722-0ubuntu1) saucy; urgency=low
+
+  [ Guenter Schwann ]
+  * Separate copyright for visual items.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 781
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 22 Jul 2013 05:02:38 +0000
+
+gallery-app (0.0.67+13.10.20130718-0ubuntu1) saucy; urgency=low
+
+  [ Guenter Schwann ]
+  * Minor performance improvement comparing MediaSource dates.
+
+  [ Łukasz 'sil2100' Zemczak ]
+  * Remove sharing of albums LP: #1163862 (LP: #1163862)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 778
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 18 Jul 2013 10:09:23 +0000
+
+gallery-app (0.0.67+13.10.20130712-0ubuntu1) saucy; urgency=low
+
+  [ Christopher Lee ]
+  * Fix issue when launching on device.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 772
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 12 Jul 2013 05:02:52 +0000
+
+gallery-app (0.0.67+13.10.20130709-0ubuntu1) saucy; urgency=low
+
+  [ Guenter Schwann ]
+  * Faster startup * use more Loader and use source instead of
+    sourComponent * introduce lazy loaded mediaLibrary that holds all
+    the media files * remove unused organic album view.
+  * Load the media object from the DB without checkin for the files (and
+    separate queries) Do a datastructure / file syetem consitency check
+    in a background thread.
+  * Reduce use of singleton.
+  * More robust test for opening a photo.
+  * Don't do file monitoring during editing.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 770
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 09 Jul 2013 05:02:57 +0000
+
+gallery-app (0.0.67+13.10.20130701-0ubuntu1) saucy; urgency=low
+
+  [ Guenter Schwann ]
+  * Remove dependency of media on events.
+  * Remove query to update the mediatable rows at startup.
+  * Put the file monitorin an extra thread.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 762
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 01 Jul 2013 08:43:51 +0000
+
+gallery-app (0.0.67+13.10.20130628-0ubuntu1) saucy; urgency=low
+
+  [ Guenter Schwann ]
+  * Show a special UI for picking content mode.
+  * * remove qml dependency from album * get the list of selected items
+    for the content picking.
+  * Use new design for organic view. (LP: #1193001)
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 757
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 28 Jun 2013 05:39:15 +0000
+
+gallery-app (0.0.67+13.10.20130627-0ubuntu1) saucy; urgency=low
+
+  [ Guenter Schwann ]
+  * Better and more startup feedback.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 753
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 27 Jun 2013 05:28:13 +0000
+
+gallery-app (0.0.67+13.10.20130626-0ubuntu1) saucy; urgency=low
+
+  [ Javier Collado ]
+  * Fixed static analysis problems in autopilot test cases source code.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 750
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 26 Jun 2013 05:38:12 +0000
+
+gallery-app (0.0.67daily13.06.25-0ubuntu1) saucy; urgency=low
+
+  [ Omer Akram ]
+  * Add autopilot test for the auto-enhance feature in the edit dialog.
+    Also add a test to make sure that deleting the last photo in the
+    gallery take you back to the main view.
+
+  [ Guenter Schwann ]
+  * Add command line arguments for photo and video pick mode.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 748
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 25 Jun 2013 07:51:43 +0000
+
+gallery-app (0.0.67daily13.06.21-0ubuntu1) saucy; urgency=low
+
+  [ tpeeters ]
+  * Use new toolbar API.
+
+  [ Guenter Schwann ]
+  * Play automatically when directly launching the video. (LP: #1170052)
+  * Album picker can add an album. (LP: #1163403)
+  * New arrangement for the qml files and cleanups.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 741
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 21 Jun 2013 07:09:21 +0000
+
+gallery-app (0.0.67daily13.06.19-0ubuntu1) saucy; urgency=low
+
+  [ Guenter Schwann ]
+  * Add autopilot test for video support.
+  * Close PhotoViewer when last media is deleted (LP: #1131802). (LP:
+    #1131802)
+  * PreviewManager does the loading and orientating of photos on it's
+    own.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 734
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 19 Jun 2013 05:48:16 +0000
+
+gallery-app (0.0.67daily13.06.18-0ubuntu1) saucy; urgency=low
+
+  [ Guenter Schwann ]
+  * Unit test for MediaObjectFactory::create().
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 730
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 18 Jun 2013 08:24:43 +0000
+
+gallery-app (0.0.67daily13.06.17-0ubuntu1) saucy; urgency=low
+
+  [ Guenter Schwann ]
+  * Run gallery in fullscreen.
+  * Multi directory support, and use ~/Videos as default media directory
+    in addition to ~/Pictures.
+  * Unit tests for MediaObjectFactory.
+  * Rudimentary video playback functionality.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 726
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Mon, 17 Jun 2013 05:38:05 +0000
+
+gallery-app (0.0.67daily13.06.14.1-0ubuntu1) saucy; urgency=low
+
+  [ Robert Bruce Park ]
+  * Fix lintian warnings as per http://paste.ubuntu.com/5741741/.
+
+  [ Guenter Schwann ]
+  * Fix updating thumbnails.
+  * Fix autopilot tests using the toolbar buttons.
+  * Show thumbnail in gallery for videos.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 719
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 14 Jun 2013 13:32:39 +0000
+
+gallery-app (0.0.67daily13.06.13-0ubuntu1) saucy; urgency=low
+
+  [ Omer Akram ]
+  * fixes a few autopilot tests on the phone devices.
+
+  [ tpeeters ]
+  * Update the type of tools properties to be compatible with upcoming
+    changes in UITK.
+
+  [ Guenter Schwann ]
+  * Support to translate the .desktop file.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 713
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Thu, 13 Jun 2013 06:13:06 +0000
+
+gallery-app (0.0.67daily13.06.12-0ubuntu1) saucy; urgency=low
+
+  [ Guenter Schwann ]
+  * Use Qt coding style for core.
+  * Use Qt coding style for medialoader.
+  * Use Qt coding style for media.
+  * Use Qt coding style for album.
+  * Use Qt coding style for database.
+  * Use Qt coding style for event.
+  * Use Qt coding style for photo.
+  * Update bzr ignore file.
+  * Use Qt coding style for qml.
+  * Use Qt coding style for src.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 708
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 12 Jun 2013 06:09:11 +0000
+
+gallery-app (0.0.67daily13.06.11-0ubuntu1) saucy; urgency=low
+
+  [ Omer Akram ]
+  * Autopilot test: wait for the edit dialog to appear before moving the
+    mouse.
+
+  [ Guenter Schwann ]
+  * More robust autopilot tests by using the *_retry functions more
+    often.
+  * Refactor PreviewManager to save thumbnails in
+    $HOME/.cache/thumbnails (LP: 1089655). (LP: #1089655)
+  * Remove directories from includes, but set them in the include paths.
+  * Move image providers and preview manager to a separate library.
+  * Improved ensure_at_least_one_event() function.
+  * Remove many dependencies on photo.
+  * Add initial video class.
+  * Use Qt coding style for util.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 696
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Tue, 11 Jun 2013 05:03:13 +0000
+
+gallery-app (0.0.67daily13.06.05-0ubuntu1) saucy; urgency=low
+
+  [ Łukasz 'sil2100' Zemczak ]
+  * libhud-qt-qml has been renamed to qtdeclarative5-hud1.0.
+
+  [ Olivier Tilloy ]
+  * Add missing runtime dependency on qtdeclarative5-accounts-plugin.
+    Merging manually as the jenkins CI job is busted, it installs the
+    wrong version of the app and its dependencies (see
+    https://code.launchpad.net/~osomon/gallery-app/missing-uoa-
+    dep/+merge/166552).
+
+  [ Michael Terry ]
+  * Port to HUD 1.0.
+
+  [ Omer Akram ]
+  * port gallery-app to ap 1.3.
+  * Fix autopilot test: wait for the edit dialog to fully appear before
+    moving towards it.
+  * Fix failing tests on touch devices.
+  * Fixes a few pep8 complaints.
+
+  [ Renato Araujo Oliveira Filho ]
+  * Fixed duplicate entries in Media Album Table;. (LP: #1163353)
+
+  [ Guenter Schwann ]
+  * Use Components and PopupUtils for the edit and share Popover.
+  * Update Toolbar API.
+  * Use SDK Popover for cover image menu.
+  * First german translation, and everything needed to make it work.
+  * Support orientation change.
+  * Fixes sharing functionality (LP: 1183460). (LP: #1183460)
+  * Remove old unused files.
+  * Split gallery into static libraries, for better modualirity, and
+    easier testing.
+  * As default save database in $HOME/.local/share/gallery-app.
+  * Remove quit action from HUD.
+  * Switching tabs by swiping is disabled, so the command can be cleaned
+    up.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 683
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 05 Jun 2013 05:03:07 +0000
+
+gallery-app (0.0.67daily13.05.31.1ubuntu.unity.next-0ubuntu1) raring; urgency=low
+
+  [ Ken VanDine ]
+  * Use UOA to populate share menu
+
+  [ Guenter Schwann ]
+  * First german translation, and everything needed to make it work.
+  * Support orientation change.
+  * Fixes sharing functionality (LP: 1183460). (LP: #1183460)
+  * Remove old unused files.
+
+  [ Omer Akram ]
+  * Fix autopilot test: wait for the edit dialog to fully appear before
+    moving towards it.
+  * Fix failing tests on touch devices.
+
+  [ Olivier Tilloy ]
+  * Add missing runtime dependency on qtdeclarative5-accounts-plugin.
+    Merging manually as the jenkins CI job is busted, it installs the
+    wrong version of the app and its dependencies (see
+    https://code.launchpad.net/~osomon/gallery-app/missing-uoa-
+    dep/+merge/166552).
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 677 (ubuntu-unity/next)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Fri, 31 May 2013 10:43:43 +0000
+
+gallery-app (0.0.67daily13.05.22ubuntu.unity.next-0ubuntu1) raring; urgency=low
+
+  [ Didier Roche ]
+  * Automatic snapshot from revision 654 (bootstrap)
+
+  [ Łukasz 'sil2100' Zemczak ]
+  * debian/control:
+    - Add build-dependency on python, needed to get autopilot tests installed
+
+  [ Guenter Schwann ]
+  * Fix releaving the toolbar in autopilot tests
+  * Fix cancel button in toolbar
+  * Fix autopilot reveal and autopilot toolbar buttons click
+  * Smaller default size on desktops
+  * Fix gallery startup on device (LP: #1173286)
+  * Speed up thumbnail creation, and limit number of thumbnails on startup
+
+  [ Michael Terry ]
+  * Port to HUD 1.0.
+
+  [ Omer Akram ]
+  * port gallery-app to ap 1.3.
+
+  [ Łukasz 'sil2100' Zemczak ]
+  * libhud-qt-qml has been renamed to qtdeclarative5-hud1.0.
+
+  [ Renato Araujo Oliveira Filho ]
+  * Fixed duplicate entries in Media Album Table;. (LP: #1163353)
+
+  [ Guenter Schwann ]
+  * Use Components and PopupUtils for the edit and share Popover.
+  * Update Toolbar API.
+  * Use SDK Popover for cover image menu.
+
+  [ Ubuntu daily release ]
+  * Automatic snapshot from revision 668 (ubuntu-unity/next)
+
+ -- Ubuntu daily release <ps-jenkins@lists.canonical.com>  Wed, 22 May 2013 05:01:53 +0000
+
+gallery-app (0.0.67) quantal; urgency=low
+
+  * For cancel on the toolbar use a button instead of a menu item (LP: #1163408)
+  * Wrap all UI strings in i18n.tr() function to prepare translation
+  * Switch to cmake as build system
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Tue, 16 Apr 2013 14:54:13 +0200
+
+gallery-app (0.0.66) quantal; urgency=low
+
+  [ Michael Terry ]
+  * Automatic snapshot from revision 633 (bootstrap)
+
+  [ Guenter Schwann ]
+  * Addied album related autopilot tests
+  * Works to make the autopilot tests more stable
+  * Fixed autopilot style to please pep8 and pyflackes
+  * Fix bug of constant redraw when event view is not visible (LP: #1164425)
+  * New MediaSelector, using SDK components
+  * Cleaned up old unused qml files
+  * Added right margin in events view
+
+  [ Renato Araujo Oliveira Filho ]
+  * Make sure that the options undo/redo/revertToOriginal are disable if is not
+    possible to execute the action (LP: #1163174)
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Thu, 11 Apr 2013 15:31:24 +0200
+
+gallery-app (0.0.65) quantal; urgency=low
+
+  * Add X-Ubuntu-Touch field into desktop file.
+  * Delete unused debian/gallery-app.links.
+    - This file was used for compatibility. But it causes the gallery to
+      be appeared twice.
+
+ -- Ying-Chun Liu (PaulLiu) <paul.liu@canonical.com>  Tue, 02 Apr 2013 22:31:03 +0800
+
+gallery-app (0.0.64) quantal; urgency=low
+
+  * Update packaging:
+    - Sort Build-Depends and Depends
+    - Only build for architectures that qtdeclarative supports
+    - Fix copyright typo
+    - Use --fail-missing
+  * Get max texture size from OpenGL
+  * Add toolbar in photos view and implement add, delete and start camera functionality
+
+ -- Michael Terry <mterry@ubuntu.com>  Wed, 27 Mar 2013 11:36:26 -0400
+
+gallery-app (0.0.63) quantal; urgency=low
+
+  * Fix crash when opeing a photo from the album view (LP: #1109206)
+  * Updates fo the autopilot tests
+  * Re-enabled pinch to zoom
+  * Use the updated header and toolbar from the SDK
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Mon, 25 Mar 2013 20:42:23 +0100
+
+gallery-app (0.0.62) quantal; urgency=low
+
+  * Fixes for the rename to gallery-app
+  * Fixes for the UI tests
+  * Prepare for SDK package change
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Wed, 20 Mar 2013 16:37:23 +0100
+
+gallery-app (0.0.61) quantal; urgency=low
+
+  * Rename to gallery-app
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Mon, 18 Mar 2013 17:59:23 +0100
+
+gallery-app (0.0.60) quantal; urgency=low
+
+  [ Benjamin Kerensa ]
+  * Add Homepage Field
+
+  [ Guenter Schwann ]
+  * Refactored event view using ListView
+  * Re-enable add album
+  * Re-enable opening photos view from album view
+  * Use 4 spaces to indent in whole project
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Sun, 15 Mar 2013 14:06:46 +0100
+
+gallery-app (0.0.59) quantal; urgency=low
+
+  * fix license in package
+
+ -- Michael Zanetti <michael.zanetti@canonical.com>  Wed, 20 Feb 2013 22:20:21 +0100
+
+gallery-app (0.0.58) quantal; urgency=low
+
+  * Do the color balance transformation on the final image (LP: #1128571)
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Tue, 19 Jan 2013 22:12:25 +0100
+
+gallery-app (0.0.57) quantal; urgency=low
+
+  * Change name in desktop file to suit dash on phablet. Fixes: https://bugs.launchpad.net/bugs/1126482
+  * Add HUD dummy Actions. Fixes: https://bugs.launchpad.net/bugs/1125656
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Mon, 18 Jan 2013 21:23:25 +0100
+
+gallery-app (0.0.56) quantal; urgency=low
+
+  * Improve album page flipping performance (flickering etc.)
+  * Don't close on first/last album page flip
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Fri, 15 Jan 2013 21:01:25 +0100
+
+gallery-app (0.0.55) quantal; urgency=low
+
+  * Show ActivityIndicator when loading thumbnails in event view
+  * Polished album open animation
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Thu, 14 Jan 2013 21:35:25 +0100
+
+gallery-app (0.0.54) quantal; urgency=low
+
+  * Fix crash when opening the second album
+  * fix HUD and exposure functionality
+  * New theme/assets for crop
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Thu, 14 Jan 2013 12:45:25 +0100
+
+gallery-app (0.0.53) quantal; urgency=low
+
+  * Visual tweaks
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Wed, 13 Jan 2013 20:26:25 +0100
+
+gallery-app (0.0.52) quantal; urgency=low
+
+  * Disable photo view from albums
+  * Fix HUD parameter actions
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Tue, 12 Jan 2013 21:01:25 +0100
+
+gallery-app (0.0.51) quantal; urgency=low
+
+  * Renamed to ubuntu-gallery
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Tue, 12 Jan 2013 00:18:25 +0100
+
+gallery-app (0.0.50) quantal; urgency=low
+
+  * Use SDK toolbar for album(s) view
+  * Color balance for HUD (preview only)
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Wed, 08 Jan 2013 18:09:25 +0100
+
+gallery-app (0.0.49) quantal; urgency=low
+
+  * Update toolbar to work with the next UITK release (0.1.29)
+  * Bigger albums on tablet
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Wed, 06 Jan 2013 22:34:25 +0100
+
+gallery-app (0.0.48) quantal; urgency=low
+
+  * HUD support
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Tue, 05 Jan 2013 19:35:25 +0100
+
+gallery-app (0.0.47) quantal; urgency=low
+
+  * Remove qthybris dependency
+
+ -- Ricardo Mendoza <ricardo.mendoza@canonical.com>  Thu, 31 Jan 2013 21:02:57 -0430
+
+gallery-app (0.0.46) quantal; urgency=low
+
+  * Make photo flick speed dependent on grid unit
+  * use toolbar from SDK
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Tue, 31 Jan 2013 20:07:25 +0000
+
+gallery-app (0.0.45) quantal; urgency=low
+
+  * Fixes for Qt5 final release packages
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Tue, 29 Jan 2013 21:28:25 +0000
+
+gallery-app (0.0.44) quantal; urgency=low
+
+  * some internal album code reshuffling
+  * fixing to open an album on touch devices
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Tue, 29 Jan 2013 18:45:03 +0000
+
+gallery-app (0.0.43) quantal; urgency=low
+
+  * Fixes for Qt5 final release packages
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Tue, 22 Jan 2013 21:28:25 +0100
+
+gallery-app (0.0.42) quantal; urgency=low
+
+  * Fixes for Qt5 final release packages
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Tue, 22 Jan 2013 20:56:25 +0100
+
+gallery-app (0.0.41) quantal; urgency=low
+
+  * Fixes for Qt5 final release packages
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Tue, 22 Jan 2013 20:19:25 +0100
+
+gallery-app (0.0.40) quantal; urgency=low
+
+  * Fixes for Qt5 final release packages
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Tue, 22 Jan 2013 20:02:25 +0100
+
+gallery-app (0.0.39) quantal; urgency=low
+
+  * Fixes for Qt5 final release packages
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Tue, 22 Jan 2013 19:38:25 +0100
+
+gallery-app (0.0.38) quantal; urgency=low
+
+  * Release or 0.0.38
+  * albums re-enabled
+  * all singletons now centralized in one class
+  * "full" photo now uses all the space inside the 2048x2048 texture
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Tue, 15 Jan 2013 17:45:03 +0100
+
+gallery-app (0.0.37) quantal; urgency=low
+
+  * New release
+
+ -- Florian Boucault <florian.boucault@canonical.com>  Tue, 08 Jan 2013 19:18:51 +0000
+
+gallery-app (0.0.36) quantal; urgency=low
+
+  * Dismissable share popover
+  * Pinch to zoom disabled
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Thu, 20 Dec 2012 15:47:03 +0100
+
+gallery-app (0.0.35) quantal; urgency=low
+
+  * Use smaller square thumbnails in event and photos overview
+
+ -- Guenter Schwann <guenter.schwann@canonical.com>  Wed, 19 Dec 2012 15:00:28 +0100
+
+gallery-app (0.0.34) quantal; urgency=low
+
+  * New daily build
+
+ -- Florian Boucault <florian.boucault@canonical.com>  Tue, 18 Dec 2012 01:56:34 +0000
+
+gallery-app (0.0.33) quantal; urgency=low
+
+  * New daily build
+
+ -- Charles Lindsay <chaz@yorba.org>  Fri, 14 Dec 2012 15:06:44 -0800
+
+gallery-app (0.0.32) quantal; urgency=low
+
+  * New daily build
+
+ -- Charles Lindsay <chaz@yorba.org>  Thu, 13 Dec 2012 17:46:35 -0800
+
+gallery-app (0.0.31) quantal; urgency=low
+
+  * New daily build
+
+ -- Charles Lindsay <chaz@yorba.org>  Wed, 12 Dec 2012 17:49:24 -0800
+
+gallery-app (0.0.30) quantal; urgency=low
+
+  * New daily build
+
+ -- Charles Lindsay <chaz@yorba.org>  Tue, 11 Dec 2012 17:13:01 -0800
+
+gallery-app (0.0.29) quantal; urgency=low
+
+  * New daily build
+
+ -- Charles Lindsay <chaz@yorba.org>  Mon, 10 Dec 2012 17:24:10 -0800
+
+gallery-app (0.0.28) quantal; urgency=low
+
+  * New daily build
+
+ -- Charles Lindsay <chaz@yorba.org>  Thu, 06 Dec 2012 17:15:44 -0800
+
+gallery-app (0.0.27) quantal; urgency=low
+
+  * New daily build
+
+ -- Charles Lindsay <chaz@yorba.org>  Wed, 05 Dec 2012 17:02:16 -0800
+
+gallery-app (0.0.26) quantal; urgency=low
+
+  * New daily build
+
+ -- Charles Lindsay <chaz@yorba.org>  Tue, 04 Dec 2012 11:18:49 -0800
+
+gallery-app (0.0.25) quantal; urgency=low
+
+  * New daily build 
+
+ -- Tim Peeters <tim.peeters@canonical.com>  Tue, 04 Dec 2012 16:55:48 +0100
+
+gallery-app (0.0.24) quantal; urgency=low
+
+  * New weekly build
+
+ -- Charles Lindsay <chaz@yorba.org>  Wed, 28 Nov 2012 17:21:59 -0800
+
+gallery-app (0.0.23) quantal; urgency=low
+
+  * New weekly build
+
+ -- Charles Lindsay <chaz@yorba.org>  Wed, 21 Nov 2012 18:07:10 -0800
+
+gallery-app (0.0.22) quantal; urgency=low
+
+  * New weekly build
+
+ -- Charles Lindsay <chaz@yorba.org>  Wed, 14 Nov 2012 18:10:42 -0800
+
+gallery-app (0.0.21.1) quantal; urgency=low
+
+  * Coordinated release with SDK
+
+ -- Charles Lindsay <chaz@yorba.org>  Thu, 01 Nov 2012 15:51:48 +0100
+
+gallery-app (0.0.21) quantal; urgency=low
+
+  * fix for LP: #1070593 
+
+ -- Bill Filler <bill.filler@canonical.com>  Fri, 26 Oct 2012 10:43:41 +0200
+
+gallery-app (0.0.20) precise; urgency=low
+
+  * New weekly build.
+
+ -- Charles Lindsay <chaz@yorba.org>  Wed, 24 Oct 2012 17:04:14 -0700
+
+gallery-app (0.0.19) precise; urgency=low
+
+  * New weekly build.
+
+ -- Charles Lindsay <chaz@yorba.org>  Wed, 17 Oct 2012 17:11:20 -0700
+
+gallery-app (0.0.18) precise; urgency=low
+
+  * New weekly build.
+
+ -- Charles Lindsay <chaz@yorba.org>  Wed, 10 Oct 2012 18:55:13 -0700
+
+gallery-app (0.0.17.4) precise; urgency=low
+
+  * Bump version for (finally) successful build.
+
+ -- Charles Lindsay <chaz@yorba.org>  Tue, 09 Oct 2012 14:11:51 -0700
+
+gallery-app (0.0.17.3) precise; urgency=low
+
+  * Remove overview demo transition swipe area.
+  * Fix Qt5 packaging issues, take 3.
+
+ -- Charles Lindsay <chaz@yorba.org>  Tue, 09 Oct 2012 12:51:40 -0700
+
+gallery-app (0.0.17.2) precise; urgency=low
+
+  * Fix for Qt5 pre-release path attempt #2
+
+ -- Eric Gregory <eric@yorba.org>  Tue, 09 Oct 2012 12:15:00 -0700
+
+gallery-app (0.0.17.1) precise; urgency=low
+
+  * Fix for Qt5 pre-release path.
+
+ -- Eric Gregory <eric@yorba.org>  Tue, 09 Oct 2012 11:14:00 -0700
+
+gallery-app (0.0.17) precise; urgency=low
+
+  * New weekly build.
+
+ -- Charles Lindsay <chaz@yorba.org>  Wed, 03 Oct 2012 17:30:03 -0700
+
+gallery-app (0.0.16.1) precise; urgency=low
+
+  * Stricten dependency on Qt4 based version of qt-components-ubuntu
+
+ -- Florian Boucault <florian.boucault@canonical.com>  Wed, 03 Oct 2012 10:58:49 +0100
+
+gallery-app (0.0.16) precise; urgency=low
+
+  * New weekly build.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 27 Sep 2012 08:42:01 -0700
+
+gallery-app (0.0.15) precise; urgency=low
+
+  * New weekly build.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 20 Sep 2012 08:50:44 -0700
+
+gallery-app (0.0.14) precise; urgency=low
+
+  * New weekly build.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 13 Sep 2012 10:22:24 -0700
+
+gallery-app (0.0.13) precise; urgency=low
+
+  * New weekly build.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 06 Sep 2012 08:16:54 -0700
+
+gallery-app (0.0.12) precise; urgency=low
+
+  * New weekly build.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 30 Aug 2012 08:26:10 -0700
+
+gallery-app (0.0.11) precise; urgency=low
+
+  * New weekly build.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 23 Aug 2012 08:26:42 -0700
+
+gallery-app (0.0.10) precise; urgency=low
+
+  * New weekly build.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 16 Aug 2012 08:10:06 -0700
+
+gallery-app (0.0.9) precise; urgency=low
+
+  * New weekly build, remembering to incremement the version number.  :)
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 09 Aug 2012 14:44:17 -0700
+
+gallery-app (0.0.8ubuntu1) precise; urgency=low
+
+  * New weekly build.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 09 Aug 2012 08:01:35 -0700
+
+gallery-app (0.0.8) precise; urgency=low
+
+  * New weekly build.
+
+ -- Charles Lindsay <chaz@yorba.org>  Wed, 18 Jul 2012 18:17:55 -0700
+
+gallery-app (0.0.7) precise; urgency=low
+
+  * New weekly build.
+
+ -- Charles Lindsay <chaz@yorba.org>  Wed, 11 Jul 2012 18:35:41 -0700
+
+gallery-app (0.0.6) precise; urgency=low
+
+  * New weekly build.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 05 Jul 2012 08:39:39 -0700
+
+gallery-app (0.0.5) precise; urgency=low
+
+  * New weekly build.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 21 Jun 2012 08:11:42 -0700
+
+gallery-app (0.0.4) precise; urgency=low
+
+  * New weekly build.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 14 Jun 2012 08:24:25 -0700
+
+gallery-app (0.0.3) precise; urgency=low
+
+  * New weekly build.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 07 Jun 2012 08:04:54 -0700
+
+gallery-app (0.0.2) precise; urgency=low
+
+  * New weekly build.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 31 May 2012 08:15:03 -0700
+
+gallery-app (0.0.1ubuntu21~precise1) precise; urgency=low
+
+  * New PPA build for Precise.
+  
+ -- Adam Dingle <adam@yorba.org>  Thu, 24 May 2012 07:58:59 -0700
+
+gallery-app (0.0.1ubuntu21~oneiric1) oneiric; urgency=low
+
+  * New PPA build for Oneiric.
+  
+ -- Adam Dingle <adam@yorba.org>  Thu, 24 May 2012 07:56:32 -0700
+ 
+gallery-app (0.0.1ubuntu20~precise1) precise; urgency=low
+
+  * New PPA build for Precise.
+  
+ -- Adam Dingle <adam@yorba.org>  Thu, 26 Apr 2012 07:03:10 -0700
+
+gallery-app (0.0.1ubuntu20~oneiric1) oneiric; urgency=low
+
+  * New PPA build for Oneiric.
+  
+ -- Adam Dingle <adam@yorba.org>  Thu, 26 Apr 2012 07:01:27 -0700
+
+gallery-app (0.0.1ubuntu19~precise1) precise; urgency=low
+
+  * New PPA build for Precise.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 19 Apr 2012 09:14:24 -0400
+
+gallery-app (0.0.1ubuntu19~oneiric1) oneiric; urgency=low
+
+  * New PPA build for Oneiric.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 19 Apr 2012 09:10:09 -0400
+
+gallery-app (0.0.1ubuntu18~precise1) precise; urgency=low
+
+  * New PPA build for Precise.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 12 Apr 2012 09:10:06 -0700
+
+gallery-app (0.0.1ubuntu18~oneiric1) oneiric; urgency=low
+
+  * New PPA build for Oneiric.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 12 Apr 2012 09:07:11 -0700
+
+gallery-app (0.0.1ubuntu17~precise1) precise; urgency=low
+
+  * New PPA build for Precise.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 05 Apr 2012 08:14:23 -0700
+
+gallery-app (0.0.1ubuntu17~oneiric1) oneiric; urgency=low
+
+  * New PPA build for Oneiric.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 05 Apr 2012 08:13:10 -0700
+
+gallery-app (0.0.1ubuntu16~oneiric2) oneiric; urgency=low
+
+  * New PPA build for Oneiric.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 29 Mar 2012 08:06:29 -0700
+
+gallery-app (0.0.1ubuntu16~precise1) precise; urgency=low
+
+  * New PPA build for Precise.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 29 Mar 2012 08:02:40 -0700
+
+gallery-app (0.0.1ubuntu16~oneiric1) oneiric; urgency=low
+
+  * New PPA build for Oneiric.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 29 Mar 2012 07:59:28 -0700
+
+gallery-app (0.0.1ubuntu15~precise1) precise; urgency=low
+
+  * New PPA build for Precise.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 22 Mar 2012 08:53:04 -0700
+
+gallery-app (0.0.1ubuntu15~oneiric1) oneiric; urgency=low
+
+  * New PPA build for Oneiric.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 22 Mar 2012 08:51:42 -0700
+
+gallery-app (0.0.1ubuntu14~precise1) precise; urgency=low
+
+  * New PPA build for Precise.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 15 Mar 2012 14:27:24 -0700
+
+gallery-app (0.0.1ubuntu14~oneiric1) oneiric; urgency=low
+
+  * New PPA build for Oneiric.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 15 Mar 2012 14:22:15 -0700
+
+gallery-app (0.0.1ubuntu13~precise1) precise; urgency=low
+
+  * New PPA build for Precise.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 15 Mar 2012 08:25:27 -0700
+
+gallery-app (0.0.1ubuntu13~oneiric1) oneiric; urgency=low
+
+  * New PPA build for Oneiric.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 15 Mar 2012 08:24:15 -0700
+
+gallery-app (0.0.1ubuntu12~precise1) precise; urgency=low
+
+  * New PPA build for Precise.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 08 Mar 2012 07:49:58 -0800
+
+gallery-app (0.0.1ubuntu12~oneiric1) oneiric; urgency=low
+
+  * New PPA build for Oneiric.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 08 Mar 2012 07:46:12 -0800
+
+gallery-app (0.0.1ubuntu11~precise1) precise; urgency=low
+
+  * New PPA build for Precise.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 01 Mar 2012 08:46:19 -0800
+
+gallery-app (0.0.1ubuntu11~oneiric1) oneiric; urgency=low
+
+  * New PPA build for Oneiric.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 01 Mar 2012 08:45:05 -0800
+
+gallery-app (0.0.1ubuntu10~precise1) precise; urgency=low
+
+  * New PPA build for Precise.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 23 Feb 2012 05:37:53 -0800
+
+gallery-app (0.0.1ubuntu10~oneiric1) oneiric; urgency=low
+
+  * New PPA build for Oneiric.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 23 Feb 2012 05:34:33 -0800
+
+gallery-app (0.0.1ubuntu9~precise1) precise; urgency=low
+
+  * New PPA build for Precise.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 16 Feb 2012 04:48:01 -0800
+
+gallery-app (0.0.1ubuntu9~oneiric1) oneiric; urgency=low
+
+  * New PPA build for Oneiric.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 16 Feb 2012 04:46:43 -0800
+
+gallery-app (0.0.1ubuntu8~precise1) precise; urgency=low
+
+  * New PPA build for Precise.
+
+ -- Adam Dingle <adam@yorba.org>  Mon, 13 Feb 2012 10:48:25 -0800
+
+gallery-app (0.0.1ubuntu8~oneiric1) oneiric; urgency=low
+
+  * New PPA build for Oneiric.
+
+ -- Adam Dingle <adam@yorba.org>  Mon, 13 Feb 2012 10:46:46 -0800
+
+gallery-app (0.0.1ubuntu7~precise1) precise; urgency=low
+
+  * New PPA build for Precise.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 09 Feb 2012 08:05:09 -0800
+
+gallery-app (0.0.1ubuntu7~oneiric1) oneiric; urgency=low
+
+  * New PPA build for Oneiric.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 09 Feb 2012 08:03:58 -0800
+
+gallery-app (0.0.1ubuntu6~precise1) precise; urgency=low
+
+  * New PPA build for Precise.
+
+ -- Adam Dingle <adam@yorba.org>  Tue, 07 Feb 2012 17:05:48 -0800
+
+gallery-app (0.0.1ubuntu6~oneiric1) oneiric; urgency=low
+
+  * New PPA build for Oneiric.
+
+ -- Adam Dingle <adam@yorba.org>  Tue, 07 Feb 2012 17:00:47 -0800
+
+gallery-app (0.0.1ubuntu5~precise1) precise; urgency=low
+
+  * New PPA build for Precise.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 02 Feb 2012 12:18:25 -0800
+
+gallery-app (0.0.1ubuntu5~oneiric1) oneiric; urgency=low
+
+  * New PPA build for Oneiric.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 02 Feb 2012 12:16:59 -0800
+
+gallery-app (0.0.1ubuntu4~precise1) precise; urgency=low
+
+  * New PPA build for Precise.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 02 Feb 2012 08:35:27 -0800
+
+gallery-app (0.0.1ubuntu4~oneiric2) oneiric; urgency=low
+
+  * New PPA build for Oneiric.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 02 Feb 2012 08:34:01 -0800
+
+gallery-app (0.0.1ubuntu3~precise1) precise; urgency=low
+
+  * New PPA build for Precise.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 26 Jan 2012 08:08:10 -0800
+
+gallery-app (0.0.1ubuntu3~oneiric1) oneiric; urgency=low
+
+  * New PPA build for Oneiric.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 26 Jan 2012 08:06:40 -0800
+
+gallery-app (0.0.1ubuntu2~precise1) precise; urgency=low
+
+  * New PPA build for Precise.
+
+ -- Adam Dingle <adam@yorba.org>  Mon, 23 Jan 2012 14:22:23 -0800
+
+gallery-app (0.0.1ubuntu2~oneiric2) oneiric; urgency=low
+
+  * New PPA build for Oneiric.
+
+ -- Adam Dingle <adam@yorba.org>  Mon, 23 Jan 2012 14:16:30 -0800
+
+gallery-app (0.0.1ubuntu1~precise1) precise; urgency=low
+
+  * New PPA build for Precise.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 19 Jan 2012 08:41:27 -0800
+
+gallery-app (0.0.1ubuntu1~oneiric1) oneiric; urgency=low
+
+  * New PPA build for Oneiric.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 19 Jan 2012 08:33:34 -0800
+
+gallery-app (0.0.1) precise; urgency=low
+
+  * Desktop prototype release.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 05 Jan 2012 18:02:41 -0800
+
+gallery-app (0.0.0ubuntu6~oneiric1) oneiric; urgency=low
+
+  * PPA build for Oneiric.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 05 Jan 2012 12:09:12 -0800
+
+gallery-app (0.0.0ubuntu6) precise; urgency=low
+
+  * New PPA build.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 05 Jan 2012 08:10:10 -0800
+
+gallery-app (0.0.0ubuntu5) oneiric; urgency=low
+
+  * New PPA build.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 22 Dec 2011 11:46:04 -0500
+
+gallery-app (0.0.0ubuntu4) oneiric; urgency=low
+
+  * New PPA build.
+
+ -- Adam Dingle <adam@yorba.org>  Mon, 19 Dec 2011 12:21:16 -0800
+
+gallery-app (0.0.0ubuntu3) oneiric; urgency=low
+
+  * New PPA build.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 15 Dec 2011 08:39:06 -0800
+
+gallery-app (0.0.0ubuntu2) oneiric; urgency=low
+
+  * New PPA build.
+
+ -- Adam Dingle <adam@yorba.org>  Mon, 12 Dec 2011 16:09:31 -0800
+
+gallery-app (0.0.0ubuntu1) oneiric; urgency=low
+
+  * First PPA build.
+
+ -- Adam Dingle <adam@yorba.org>  Thu, 08 Dec 2011 10:27:20 -0800
+
+gallery-app (0.0.0) unstable; urgency=low
+
+  * Initial release.
+
+ -- Adam Dingle <adam@yorba.org>  Mon, 05 Dec 2011 15:07:24 -0800

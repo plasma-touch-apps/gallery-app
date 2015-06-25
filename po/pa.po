@@ -1,0 +1,371 @@
+# Punjabi translation for gallery-app
+# Copyright (c) 2015 Rosetta Contributors and Canonical Ltd 2015
+# This file is distributed under the same license as the gallery-app package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gallery-app\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2015-02-25 11:17+0100\n"
+"PO-Revision-Date: 2015-04-18 07:17+0000\n"
+"Last-Translator: Gursharnjit_Singh <ubuntuser13@gmail.com>\n"
+"Language-Team: Punjabi <pa@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2015-04-19 05:54+0000\n"
+"X-Generator: Launchpad (build 17430)\n"
+
+#: rc/qml/AlbumEditor/AlbumEditMenu.qml:43
+#: rc/qml/AlbumEditor/AlbumEditor.qml:36
+msgid "Edit album"
+msgstr "ਐਲਬਮ ਸੋਧ"
+
+#: rc/qml/AlbumEditor/AlbumEditMenu.qml:50
+#: rc/qml/AlbumViewer/AlbumViewer.qml:375
+#: rc/qml/Components/DeleteDialog.qml:32
+#: rc/qml/MediaViewer/MediaViewer.qml:466 rc/qml/Utility/EditingHUD.qml:67
+#: rc/qml/Utility/SelectionToolbarAction.qml:56
+msgid "Delete"
+msgstr "ਹਟਾਓ"
+
+#: rc/qml/AlbumEditor/AlbumEditor.qml:39
+#: rc/qml/Components/MediaSelector.qml:92
+#: rc/qml/MediaViewer/MediaViewer.qml:294 rc/qml/PickerScreen.qml:235
+#: rc/qml/Utility/SelectionToolbarAction.qml:75
+msgid "Cancel"
+msgstr "ਰੱਦ"
+
+#: rc/qml/AlbumViewer/AlbumCoverList.qml:113
+msgid "Default"
+msgstr "ਮੂਲ"
+
+#: rc/qml/AlbumViewer/AlbumCoverList.qml:114
+msgid "Blue"
+msgstr "ਨੀਲਾ"
+
+#: rc/qml/AlbumViewer/AlbumCoverList.qml:115
+msgid "Green"
+msgstr "ਹਰਾ"
+
+#: rc/qml/AlbumViewer/AlbumCoverList.qml:116
+msgid "Pattern"
+msgstr "ਪੈਟਰਨ"
+
+#: rc/qml/AlbumViewer/AlbumCoverList.qml:117
+msgid "Red"
+msgstr "ਲਾਲ"
+
+#: rc/qml/AlbumViewer/AlbumViewer.qml:107 rc/qml/MainScreen.qml:60
+msgid "Album"
+msgstr "ਐਲਬਮ"
+
+#: rc/qml/AlbumViewer/AlbumViewer.qml:369
+#: rc/qml/MediaViewer/MediaViewer.qml:456
+msgid "Add to album"
+msgstr "ਐਲਬਮ ਵਿੱਚ ਜੋੜੋ"
+
+#: rc/qml/AlbumsOverview.qml:236 rc/qml/Components/PopupAlbumPicker.qml:91
+msgid "Add new album"
+msgstr "ਨਵੀਂ ਐਲਬਮ ਜੋੜੋ"
+
+#: rc/qml/AlbumsOverview.qml:240 rc/qml/Components/PopupAlbumPicker.qml:101
+msgid "New Photo Album"
+msgstr "ਨਵੀਂ ਫ਼ੋਟੋ ਐਲਬਮ"
+
+#: rc/qml/AlbumsOverview.qml:241 rc/qml/Components/PopupAlbumPicker.qml:102
+msgid "Subtitle"
+msgstr "ਸਬ-ਟਾਈਟਲ"
+
+#: rc/qml/AlbumsOverview.qml:247 rc/qml/Utility/EditingHUD.qml:77
+#: rc/qml/Utility/SelectionToolbarAction.qml:47
+msgid "Add"
+msgstr "ਜੋੜੋ"
+
+#: rc/qml/AlbumsOverview.qml:252 rc/qml/Utility/PhotosToolbarActions.qml:51
+msgid "Camera"
+msgstr "ਕੈਮਰਾ"
+
+#: rc/qml/Components/DeleteDialog.qml:36
+#: rc/qml/MediaViewer/MediaViewer.qml:242
+msgid "Yes"
+msgstr "ਹਾਂ"
+
+#: rc/qml/Components/DeleteDialog.qml:45
+#: rc/qml/MediaViewer/MediaViewer.qml:253
+msgid "No"
+msgstr "ਨਹੀਂ"
+
+#: rc/qml/Components/DeleteOrDeleteWithContentsDialog.qml:51
+msgid "Delete album"
+msgstr "ਐਲਬਮ ਹਟਾਓ"
+
+#: rc/qml/Components/DeleteOrDeleteWithContentsDialog.qml:60
+msgid "Delete album + contents"
+msgstr "ਐਲਬਮ +   ਸਮੱਗਰੀ ਹਟਾਓ"
+
+#: rc/qml/Components/MediaSelector.qml:59
+#: rc/qml/Components/MediaSelector.qml:80
+msgid "Add to Album"
+msgstr "ਐਲਬਮ ਵਿੱਚ ਜੋੜੋ"
+
+#: rc/qml/Components/PopupAlbumPicker.qml:161 rc/qml/Utility/EditingHUD.qml:78
+msgid "Add Photo to Album"
+msgstr "ਫ਼ੋਟੋ ਨੂੰ ਐਲਬਮ ਵਿੱਚ ਜੋੜੋ"
+
+#: rc/qml/EventsOverview.qml:76 rc/qml/PhotosOverview.qml:85
+msgid "Delete 1 photo"
+msgstr "1 ਫ਼ੋਟੋ ਹਟਾਓ"
+
+#: rc/qml/EventsOverview.qml:78 rc/qml/PhotosOverview.qml:87
+msgid "Delete 1 video"
+msgstr "1 ਵੀਡੀਓ ਹਟਾਓ"
+
+#: rc/qml/EventsOverview.qml:81 rc/qml/PhotosOverview.qml:90
+#, qt-format
+msgid "Delete %1 photos"
+msgstr "%1 ਫ਼ੋਟੋਆਂ ਹਟਾਓ"
+
+#: rc/qml/EventsOverview.qml:83 rc/qml/PhotosOverview.qml:92
+#, qt-format
+msgid "Delete %1 videos"
+msgstr "%1 ਵੀਡੀਓ ਹਟਾਓ"
+
+#: rc/qml/EventsOverview.qml:86 rc/qml/PhotosOverview.qml:95
+#, qt-format
+msgid "Delete %1 photos and 1 video"
+msgstr "%1 ਫ਼ੋਟੋਆਂ ਅਤੇ 1 ਵੀਡੀਓ ਹਟਾਓ"
+
+#: rc/qml/EventsOverview.qml:88 rc/qml/PhotosOverview.qml:97
+#, qt-format
+msgid "Delete 1 photo and %1 videos"
+msgstr "1 ਫ਼ੋਟੋ ਅਤੇ %1 ਵੀਡੀਓ ਹਟਾਓ"
+
+#: rc/qml/EventsOverview.qml:90 rc/qml/PhotosOverview.qml:99
+msgid "Delete 1 photo and 1 video"
+msgstr "1 ਫ਼ੋਟੋ ਅਤੇ 1 ਵੀਡੀਓ ਹਟਾਓ"
+
+#: rc/qml/EventsOverview.qml:92 rc/qml/PhotosOverview.qml:101
+#, qt-format
+msgid "Delete %1 photos and %2 videos"
+msgstr "%1 ਫ਼ੋਟੋਆਂ ਅਤੇ %2 ਵੀਡੀਓ ਹਟਾਓ"
+
+#: rc/qml/EventsOverview.qml:151 rc/qml/PhotosOverview.qml:165
+msgid "Share to"
+msgstr "ਸਾਂਝਾ ਕਰੋ"
+
+#: rc/qml/LoadingScreen.qml:46
+msgid "Loading…"
+msgstr "ਲੋਡ ਕਰ ਰਿਹਾ…"
+
+#: rc/qml/MainScreen.qml:147
+msgid "Albums"
+msgstr "ਐਲਬਮ"
+
+#: rc/qml/MainScreen.qml:161 rc/qml/MainScreen.qml:190
+#: rc/qml/PickerScreen.qml:101
+msgid "Events"
+msgstr "ਸਮਾਗਮ"
+
+#: rc/qml/MainScreen.qml:188 rc/qml/MainScreen.qml:233
+#: rc/qml/PickerScreen.qml:141 rc/qml/PickerScreen.qml:194
+#: rc/qml/Utility/PhotosToolbarActions.qml:34
+msgid "Select"
+msgstr "ਚੁਣੋ"
+
+#: rc/qml/MainScreen.qml:199 rc/qml/MainScreen.qml:235
+#: rc/qml/PickerScreen.qml:152
+msgid "Photos"
+msgstr "ਫੋਟੋਆਂ"
+
+#: rc/qml/MediaViewer/CropOverlay.qml:352
+#: rc/qml/MediaViewer/EditPopover.qml:51 rc/qml/Utility/EditingHUD.qml:106
+msgid "Crop"
+msgstr "ਕਰੋਪ"
+
+#: rc/qml/MediaViewer/EditPopover.qml:42 rc/qml/Utility/EditingHUD.qml:99
+msgid "Rotate"
+msgstr "ਘੁਮਾਓ"
+
+#: rc/qml/MediaViewer/EditPopover.qml:60
+msgid "Auto enhance"
+msgstr "ਆਪਣੇ ਆਪ ਵਧਾਓ"
+
+#: rc/qml/MediaViewer/EditPopover.qml:69 rc/qml/Utility/EditingHUD.qml:82
+msgid "Undo"
+msgstr "ਵਾਪਸ"
+
+#: rc/qml/MediaViewer/EditPopover.qml:79 rc/qml/Utility/EditingHUD.qml:87
+msgid "Redo"
+msgstr "ਪਰਤਾਓ"
+
+#: rc/qml/MediaViewer/EditPopover.qml:89
+msgid "Revert to original"
+msgstr "ਅਸਲ ਤੇ ਲਿਆਓ"
+
+#: rc/qml/MediaViewer/MediaViewer.qml:231
+msgid "Delete a photo"
+msgstr "ਫ਼ੋਟੋ ਹਟਾਓ"
+
+#: rc/qml/MediaViewer/MediaViewer.qml:231
+msgid "Delete a video"
+msgstr "ਇੱਕ ਵੀਡੀਓ ਹਟਾਓ"
+
+#: rc/qml/MediaViewer/MediaViewer.qml:264
+msgid "Remove a photo from album"
+msgstr "ਐਲਬਮ ਵਿੱਚੋਂ ਫ਼ੋਟੋ ਹਟਾਓ"
+
+#: rc/qml/MediaViewer/MediaViewer.qml:264
+msgid "Remove a video from album"
+msgstr "ਐਲਬਮ ਤੋਂ ਇੱਕ ਵੀਡੀਓ ਹਟਾਓ"
+
+#: rc/qml/MediaViewer/MediaViewer.qml:273
+msgid "Remove from Album"
+msgstr "ਐਲਬਮ ਤੋਂ ਹਟਾਓ"
+
+#: rc/qml/MediaViewer/MediaViewer.qml:284
+msgid "Remove from Album and Delete"
+msgstr "ਐਲਬਮ ਤੋਂ ਹਟਾਓ ਅਤੇ ਹਟਾਓ"
+
+#: rc/qml/MediaViewer/MediaViewer.qml:449
+msgid "Edit"
+msgstr "ਸੋਧ"
+
+#: rc/qml/MediaViewer/MediaViewer.qml:477 rc/qml/Utility/EditingHUD.qml:72
+#: rc/qml/Utility/SelectionToolbarAction.qml:65
+msgid "Share"
+msgstr "ਸਾਂਝਾ ਕਰੋ"
+
+#: rc/qml/MediaViewer/PopupPhotoViewer.qml:46
+#: desktop/gallery-app.desktop.in.in.h:1
+msgid "Gallery"
+msgstr "ਗੈਲਰੀ"
+
+#: rc/qml/MediaViewer/PopupPhotoViewer.qml:167
+msgid "Toggle Selection"
+msgstr "ਚੋਣ ਬਦਲੋ"
+
+#: rc/qml/PickerScreen.qml:241
+msgid "Pick"
+msgstr "ਚੁਣੋ"
+
+#: rc/qml/Utility/EditingHUD.qml:68
+msgid "Trash;Erase"
+msgstr "ਰੱਦੀ;ਮਿਟਾਓ"
+
+#: rc/qml/Utility/EditingHUD.qml:73
+msgid "Post;Upload;Attach"
+msgstr "ਪੋਸਟ;ਅੱਪਲੋਡ;ਨੱਥੀ ਕਰੋ"
+
+#: rc/qml/Utility/EditingHUD.qml:83
+msgid "Cancel Action;Backstep"
+msgstr "ਰੱਦ;ਕਾਰਵਾਈ; ਪਿੱਛੇ ਹਟੋ"
+
+#: rc/qml/Utility/EditingHUD.qml:88
+msgid "Reapply;Make Again"
+msgstr "ਮੂੜ-ਲਾਗੂ;ਦੁਬਾਰਾ ਬਣਾਓ"
+
+#: rc/qml/Utility/EditingHUD.qml:92
+msgid "Auto Enhance"
+msgstr "ਆਪਣੇ ਆਪ ਵਧਾਓ"
+
+#: rc/qml/Utility/EditingHUD.qml:93
+msgid "Adjust the image automatically"
+msgstr "ਆਪਣੇ ਆਪ ਤਸਵੀਰ ਨੂੰ ਅਨੁਕੂਲ ਕਰੋ"
+
+#: rc/qml/Utility/EditingHUD.qml:94
+msgid "Automatically Adjust Photo"
+msgstr "ਫ਼ੋਟੋ ਨੂੰ ਆਪਣੇ ਆਪ ਅਨੁਕੂਲ ਕਰੋ"
+
+#: rc/qml/Utility/EditingHUD.qml:100
+msgid "Turn Clockwise"
+msgstr "ਘੜੀ ਦੀ ਦਿਸ਼ਾ ਵੱਲ ਘੁਮੋ"
+
+#: rc/qml/Utility/EditingHUD.qml:101
+msgid "Rotate the image clockwise"
+msgstr "ਤਸਵੀਰ ਨੂੰ ਘੜੀ ਦੀ ਦਿਸ਼ਾ ਵਿੱਚ ਘੁਮਾਓ"
+
+#: rc/qml/Utility/EditingHUD.qml:107
+msgid "Trim;Cut"
+msgstr "ਤਰਾਸ਼ੋ;ਕੱਟੋ"
+
+#: rc/qml/Utility/EditingHUD.qml:108
+msgid "Crop the image"
+msgstr "ਤਸਵੀਰ ਨੂੰ ਕਰੋਪ ਕਰੋ"
+
+#: rc/qml/Utility/EditingHUD.qml:113
+msgid "Revert to Original"
+msgstr "ਮੁੜ ਅਸਲ ਵਿੱਚ ਬਦਲੋ"
+
+#: rc/qml/Utility/EditingHUD.qml:114
+msgid "Discard Changes"
+msgstr "ਬਦਲਾਅ ਰੱਦ ਕਰੋ"
+
+#: rc/qml/Utility/EditingHUD.qml:115
+msgid "Discard all changes"
+msgstr "ਸਾਰੇ ਬਦਲਾਅ ਰੱਦ ਕਰੋ"
+
+#: rc/qml/Utility/EditingHUD.qml:119
+msgid "Exposure"
+msgstr "ਐਕਸਪੋਜ਼ਰ"
+
+#: rc/qml/Utility/EditingHUD.qml:120
+msgid "Adjust the exposure"
+msgstr "ਐਕਸਪੋਜ਼ਰ ਅਨੁਕੂਲ ਕਰੋ"
+
+#: rc/qml/Utility/EditingHUD.qml:121
+msgid "Underexposed;Overexposed"
+msgstr "ਅੰਡਰਐਕਸਪੋਜ਼;ਓਵਰਐਕਸਪੋਜ਼"
+
+#: rc/qml/Utility/EditingHUD.qml:122 rc/qml/Utility/EditingHUD.qml:163
+msgid "Confirm"
+msgstr "ਪੁਸ਼ਟੀ"
+
+#: rc/qml/Utility/EditingHUD.qml:126
+msgid "Compensation"
+msgstr "ਪੁਰਤੀ"
+
+#: rc/qml/Utility/EditingHUD.qml:160
+msgid "Color Balance"
+msgstr "ਰੰਗ ਸੰਤੁਲਨ"
+
+#: rc/qml/Utility/EditingHUD.qml:161
+msgid "Adjust color balance"
+msgstr "ਰੰਗ ਸੰਤੁਲਨ ਅਨੁਕੂਲ ਕਰੋ"
+
+#: rc/qml/Utility/EditingHUD.qml:162
+msgid "Saturation;Hue"
+msgstr "ਸੈਚੂਰੇਸ਼ਨ;ਹਿਓ"
+
+#: rc/qml/Utility/EditingHUD.qml:167
+msgid "Brightness"
+msgstr "ਚਮਕ"
+
+#: rc/qml/Utility/EditingHUD.qml:178
+msgid "Contrast"
+msgstr "ਕਨਟਰਾਸਟ"
+
+#: rc/qml/Utility/EditingHUD.qml:189
+msgid "Saturation"
+msgstr "ਸੈਚੂਰੇਸ਼ਨ"
+
+#: rc/qml/Utility/EditingHUD.qml:200
+msgid "Hue"
+msgstr "ਹਿਊ"
+
+#: rc/qml/Utility/PhotosToolbarActions.qml:43
+msgid "Import"
+msgstr "ਆਮਦ"
+
+#: desktop/gallery-app.desktop.in.in.h:2
+msgid "Ubuntu Photo Viewer"
+msgstr "ਉਬੰਤੂ ਫ਼ੋਟੋ ਦਰਸ਼ਕ"
+
+#: desktop/gallery-app.desktop.in.in.h:3
+msgid "Browse your photographs"
+msgstr "ਆਪਣੇ ਫ਼ੋਟੋਗ੍ਰਾਫ਼ਾਂ ਦੀ ਝਲਕ ਵੇਖੋ"
+
+#: desktop/gallery-app.desktop.in.in.h:4
+msgid "Photographs;Pictures;Albums"
+msgstr "ਫ਼ੋਟੋੋਗ੍ਰਾਫ਼;ਤਸਵੀਰਾਂ;ਐਲਬਮਾਂ"

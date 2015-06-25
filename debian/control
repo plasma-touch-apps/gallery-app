@@ -1,0 +1,57 @@
+Source: gallery-app
+Section: graphics
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 9),
+               cmake,
+               pkg-config,
+               dh-translations,
+               libcontent-hub-dev (>= 0.0+13.10.20130930.1),
+               libexiv2-dev,
+               libgl1-mesa-dev | libgl-dev,
+               libgles2-mesa-dev,
+               libmediainfo-dev,
+               libqt5opengl5-dev,
+               qt5-default,
+               qtbase5-dev,
+               qtdeclarative5-dev,
+               python3-all,
+# for static linking of exiv2 in click mode
+               libexpat1-dev,
+               zlib1g-dev,
+Standards-Version: 3.9.5
+# If you don't have commit rights to lp:gallery-app but need to upload
+# packaging changes, just go ahead.  The developers will notice and sync
+# up the code again.
+Vcs-Bzr: lp:gallery-app
+Homepage: https://wiki.ubuntu.com/Touch/
+
+Package: gallery-app
+Architecture: any
+Replaces: ubuntu-gallery
+Conflicts: ubuntu-gallery
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         libqt5sql5-sqlite,
+         qtdeclarative5-qtquick2-plugin,
+         qml-module-qtmultimedia | qml-module-qtmultimedia-gles,
+         qtdeclarative5-ubuntu-ui-toolkit-plugin | qtdeclarative5-ubuntu-ui-toolkit-plugin-gles,
+         qtdeclarative5-window-plugin,
+Description: Photo gallery for Ubuntu
+ gallery-app is a photo gallery for the Ubuntu platform.
+
+Package: gallery-app-autopilot
+Architecture: all
+Replaces: ubuntu-gallery-autopilot
+Conflicts: ubuntu-gallery-autopilot
+Depends: ${misc:Depends},
+         gallery-app (>= ${source:Version}),
+         libautopilot-qt (>= 1.4),
+         libqt5test5,
+         ubuntu-ui-toolkit-autopilot,
+         unity8-autopilot,
+         python3-pkg-resources,
+         python3-autopilot,
+Description: Autopilot tests for the photo gallery for Ubuntu
+ gallery-app is a photo gallery for the Ubuntu platform. This package contains
+ autopilot tests for it.
