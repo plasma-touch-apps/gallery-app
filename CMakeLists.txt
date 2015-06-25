@@ -52,7 +52,7 @@ find_program(INTLTOOL_EXTRACT intltool-extract)
 include(GNUInstallDirs)
 
 option(INSTALL_TESTS "Install the tests on make install" off)
-option(CLICK_MODE "Installs to a contained location" on)
+option(CLICK_MODE "Installs to a contained location" off)
 
 set(GALLERY gallery-app)
 set(DESKTOP_FILE ${GALLERY}.desktop)
